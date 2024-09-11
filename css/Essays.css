@@ -23,11 +23,15 @@
 }
 
 .TOC .issued-by {
-    font-size: 11px;
+    font-size: 15px;
+    margin-bottom: 70px;
+    align-items: center;
+    text-align: center;
 }
 
 .TOC h1 {
-    margin-bottom: 70px; 
+    margin-bottom: 10px; 
+    text-align: center;
 }
 
 .TOC h2 {
