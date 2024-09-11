@@ -1,25 +1,25 @@
-/* General Reset and Font Style */
+
 * {
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     color: white;
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 /* Main Container */
 .main-container {
     width: 100%;
-    max-width: 900px; /* Further increased max-width for a wider layout */
+    max-width: 900px; 
     margin: 0 auto;
-    padding: 20px; /* Slightly increased padding */
+    padding: 20px; 
 }
 
-/* Table of Contents Styling */
+
 .TOC {
     text-align: left;
     width: 100%;
-    max-width: 600px; /* Increased max-width for a wider appearance */
-    margin: 40px auto; /* Center horizontally with slightly increased top margin */
+    max-width: 600px;
+    margin: 40px auto; 
 }
 
 .TOC .issued-by {
@@ -27,16 +27,16 @@
 }
 
 .TOC h1 {
-    margin-bottom: 70px; /* Increased margin below the title */
+    margin-bottom: 70px; 
 }
 
 .TOC h2 {
-    margin-bottom: 12px; /* Increased margin below the title */
+    margin-bottom: 12px; 
     text-align: center;
-    font-size: 22px; /* Slightly larger font size for the title */
+    font-size: 22px; 
     font-weight: bold;
-    border-bottom: 1px solid #555; /* Thinner border for better visibility on dark background */
-    padding-bottom: 6px; /* Slightly increased padding */
+    border-bottom: 1px solid #555; 
+    padding-bottom: 6px; 
     margin-top: 40px;
 }
 
@@ -47,15 +47,14 @@
 }
 
 .TOC-item {
-    margin-bottom: 14px; /* Slightly increased margin between items */
-    font-size: 17px; /* Slightly larger font size */
+    margin-bottom: 14px; 
+    font-size: 17px; 
     font-weight: normal;
     position: relative;
-    padding-right: 50px; /* Increased padding for page number */
+    padding-right: 50px; 
 }
 
 .TOC-item::after {
-    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
     position: absolute;
     left: 0;
     right: 0;
@@ -63,28 +62,27 @@
     transform: translateY(-50%);
     white-space: nowrap;
     overflow: hidden;
-    color: #777; /* Slightly lighter dots for better contrast */
+    color: #777;
     text-align: right;
-    padding-right: 50px; /* Adjusted padding for dots alignment */
+    padding-right: 50px;
 }
-
 .TOC-page {
     position: absolute;
     right: 0;
-    font-size: 17px; /* Slightly larger font size */
-    background-color: black; /* To match the background and avoid contrast issues */
-    padding-left: 6px; /* Slightly increased padding */
+    font-size: 17px; 
+    background-color: black; 
+    padding-left: 6px; 
 }
 
-/* Description Styling */
+
 .TOC-Text {
-    font-size: 13px; /* Slightly larger font size for descriptions */
-    margin-top: 6px; /* Increased margin to create space between title and description */
-    margin-left: 22px; /* Increased indented margin for alignment */
-    margin-bottom: -2px; /* Slightly reduced space below description */
-    color: #bbb; /* Lighter color for distinction on dark background */
-    text-align: justify; /* Justify text to align both left and right */
-    line-height: 1.5; /* Slightly increased line height for readability */
+    font-size: 13px; 
+    margin-top: 6px;
+    margin-left: 22px;
+    margin-bottom: -2px; 
+    color: #bbb; 
+    text-align: justify; 
+    line-height: 1.5;
 }
 
 .TOC .Jaren {
@@ -126,19 +124,117 @@
 }
 
 p {
-    text-indent: 20px; /* Adjust the value to change the indentation size */
+    text-indent: 20px; 
     line-height: 1.6;
 }
 
-/* Mobile Responsiveness */
+h6{
+    font-weight: lighter;
+    line-height: 1;
+}
+.music-player {
+    display: flex;
+    align-items: center;
+    background-color: #444; 
+    border-radius: 6px; 
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    width: 50%; 
+    max-width: 300px; 
+    gap: 8px; 
+    margin: 0 auto; 
+}
+
+
+.play-button {
+    background-color: #666; 
+    border: none;
+    color: #fff;
+    font-size: 16px; 
+    border-radius: 50%;
+    width: 35px; 
+    height: 35px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #777; 
+}
+
+
+.track-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #444; 
+    padding: 4px; 
+    border-radius: 6px;
+    color: #fff;
+}
+
+.track-title {
+    font-size: 14px; 
+    font-weight: bold;
+    background-color: #444;
+}
+
+.track-artist {
+    font-size: 11px; 
+    color: #ddd; 
+    margin-bottom: 4px;
+    background-color: #444;
+}
+
+.progress-container {
+    background-color: #666; 
+    border-radius: 3px; 
+    height: 4px; 
+    position: relative;
+    margin: 4px 0; 
+}
+
+.progress-bar {
+    background-color: #888;
+    height: 100%;
+    border-radius: 3px; 
+    width: 0;
+}
+
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px; 
+    color: #ccc; 
+    padding: 1px 2px; 
+    border-radius: 3px; 
+}
+
+.time-info {
+    background-color: #444; 
+    font-size: 9px; 
+    padding: 1px; 
+}
+
+
+.current-time {
+    background-color: #444; 
+    font-size: 9px; 
+}
+
 @media (max-width: 768px) {
     .TOC {
-        max-width: 95%; /* Allow more width on smaller screens */
-        margin-top: 30px; /* Slightly increased margin for mobile */
+        max-width: 95%; 
+        margin-top: 30px; 
     }
 
     .TOC-Text {
-        margin-left: 15px; /* Slightly increased indent on smaller screens */
-        font-size: 12px; /* Slightly larger font size for mobile */
+        margin-left: 15px; 
+        font-size: 12px; 
     }
 }
