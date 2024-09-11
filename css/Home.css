@@ -1,0 +1,96 @@
+/* General Reset and Font Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Items */
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    position: relative; /* Needed for pseudo-element positioning */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width 0.6s ease; /* Slower animation for the underline */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Expands the underline */
+}
+
+/* Logo */
+.logo-link {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logo-image {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .logo-link {
+        margin-top: 10px;
+    }
+}

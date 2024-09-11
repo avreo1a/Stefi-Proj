@@ -1,0 +1,139 @@
+/* General Reset and Font Style */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 900px; /* Further increased max-width for a wider layout */
+    margin: 0 auto;
+    padding: 20px; /* Slightly increased padding */
+}
+
+/* Table of Contents Styling */
+.TOC {
+    text-align: left;
+    width: 100%;
+    max-width: 600px; /* Increased max-width for a wider appearance */
+    margin: 40px auto; /* Center horizontally with slightly increased top margin */
+}
+
+.TOC .issued-by {
+    font-size: 11px;
+}
+
+.TOC h1 {
+    margin-bottom: 70px; /* Increased margin below the title */
+}
+
+.TOC h2 {
+    margin-bottom: 12px; /* Increased margin below the title */
+    text-align: center;
+    font-size: 22px; /* Slightly larger font size for the title */
+    font-weight: bold;
+    border-bottom: 1px solid #555; /* Thinner border for better visibility on dark background */
+    padding-bottom: 6px; /* Slightly increased padding */
+    margin-top: 40px;
+}
+
+.TOC ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.TOC-item {
+    margin-bottom: 14px; /* Slightly increased margin between items */
+    font-size: 17px; /* Slightly larger font size */
+    font-weight: normal;
+    position: relative;
+    padding-right: 50px; /* Increased padding for page number */
+}
+
+.TOC-item::after {
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    color: #777; /* Slightly lighter dots for better contrast */
+    text-align: right;
+    padding-right: 50px; /* Adjusted padding for dots alignment */
+}
+
+.TOC-page {
+    position: absolute;
+    right: 0;
+    font-size: 17px; /* Slightly larger font size */
+    background-color: black; /* To match the background and avoid contrast issues */
+    padding-left: 6px; /* Slightly increased padding */
+}
+
+/* Description Styling */
+.TOC-Text {
+    font-size: 13px; /* Slightly larger font size for descriptions */
+    margin-top: 6px; /* Increased margin to create space between title and description */
+    margin-left: 22px; /* Increased indented margin for alignment */
+    margin-bottom: -2px; /* Slightly reduced space below description */
+    color: #bbb; /* Lighter color for distinction on dark background */
+    text-align: justify; /* Justify text to align both left and right */
+    line-height: 1.5; /* Slightly increased line height for readability */
+}
+
+.TOC .Jaren {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.TOC .EssayPicture {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.TOC .EssayPicture, .TOC .EssayPictureanya {
+    width: 50%; 
+    height: auto; 
+    margin: 20px auto; 
+    display: block; 
+}
+
+.TOC .ExplaAnya {
+    text-align: center;
+    font-size: small;
+    margin-top: 6px;
+}
+
+.TOC .EssayPictureJea {
+    width: 25%; 
+    height: 20%; 
+    margin: 20px auto; 
+    display: block; 
+}
+
+.TOC .pic-explanation {
+    text-align: center;
+    font-size: small;
+    margin-top: 6px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .TOC {
+        max-width: 95%; /* Allow more width on smaller screens */
+        margin-top: 30px; /* Slightly increased margin for mobile */
+    }
+
+    .TOC-Text {
+        margin-left: 15px; /* Slightly increased indent on smaller screens */
+        font-size: 12px; /* Slightly larger font size for mobile */
+    }
+}
