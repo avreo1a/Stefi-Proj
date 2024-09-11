@@ -125,6 +125,11 @@
     margin-top: 6px;
 }
 
+p {
+    text-indent: 20px; /* Adjust the value to change the indentation size */
+    line-height: 1.6;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .TOC {
